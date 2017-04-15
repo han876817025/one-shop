@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情页</title>
+    <link rel="stylesheet" type="text/css" href="style/detail.css"/>
+    <link rel="stylesheet" type="text/css" href="style/header.css"/>
+    <link rel="stylesheet" type="text/css" href="font-w/font/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="font-w/font1/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="font-w/font2/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="font-w/font3/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="font-w/font4/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="font-w/font5/iconfont.css"/>
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/cooki.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/load.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        function main(){
+            document.getElementById("shopcar").onclick=function(){
+                var _val=document.getElementById("in").value;
+                $.getJSON("json/detail.json",function (data) {
+                    console.log(data);
+                    for(var k in data){
+                        console.log(k)
+                        document.cookie=k+"="+_val;path="/"; "expires=" + new Date(new Date().getTime() + 7 * 24 * 3600000);
+                    }
+                })
+                alert("进入购物车，点击确定");
+//                window.location.href="shopingcar.html";
+            }
+        }
+        window.onload=main;
+    </script>
+</head>
+<body>
+<div id="h"></div>
+<!---->
+<div class="nav">
+    <div class="miss-nav">
+        <ul>
+            <li id="all">所有分类 +</li>
+            <li>首页</li>
+            <li>新品</li>
+            <li>HOT款</li>
+            <li>上装</li>
+            <li>下装</li>
+            <li>VIP包邮活动</li>
+            <li>收藏YING</li>
+        </ul>
+        <!--<div class="miss-both">-->
+            <!--<div class="miss-all fl" id="uu">-->
+                <!--<ul class="uu">-->
+                    <!--<li id="baby">所有宝贝</li>-->
+                    <!--<li>2017.2.4正月初八新品</li>-->
+                    <!--<li>MISS.YING家的衣衣</li>-->
+                    <!--<li>MISS.YING家的衣衣</li>-->
+                    <!--<li>MISS.YING家的衣衣</li>-->
+                    <!--<li>MISS.YING家的衣衣</li>-->
+                    <!--<li>MISS.YING家的衣衣</li>-->
+                <!--</ul>-->
+                <!--<div class="miss-baby fl" id="uy">-->
+                    <!--<ul class="uu">-->
+                        <!--<li>按销售-->
+                        <!--<li>-->
+                        <!--<li>按价格</li>-->
+                        <!--<li>按新品</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        <!--</div>-->
+    </div>
+
+</div>
+<!---->
+<div class="shop" id="shop">
+    <div class="warp">
+        <div class="shop-box">
+            <div class="shop-show fl">
+                <div class="mm" id="mm">
+                    <img class="img1" src="img/img1.jpg" alt="" />
+                    <img src="img/img2.jpg" alt="" />
+                    <img src="img/img3.jpg" alt="" />
+                    <img src="img/img4.jpg" alt="" />
+                    <img src="img/img5.jpg" alt="" />
+                    <img src="img/img6.jpg" alt="" />
+                    <div class="point" id="point"></div>
+                </div>
+                <div class="big" id="big">
+                    <img class="img1" id="img1" src="img/img1.jpg" alt="" />
+                </div>
+                <span><img src="img/img1.jpg" alt="" /></span>
+                <span><img src="img/img2.jpg" alt="" /></span>
+                <span><img src="img/img3.jpg" alt="" /></span>
+                <span><img src="img/img4.jpg" alt="" /></span>
+                <span><img src="img/img5.jpg" alt="" /></span>
+                <span><img src="img/img6.jpg" alt="" /></span>
+                <p>收藏宝贝（115人气）| 分享</p>
+
+            </div>
+            <div class="shop-buy fl">
+                <h2>MISSYING定制-蓝色水洗磨破修身小脚弹力铅笔牛仔裤2017春季新款 </h2>
+                <p>有弹力又修身，但是不会特别紧的那种。 猫须的磨破感很带劲， 脚口做了特别处理，立体裁剪挖了一个小方块多露出一点脚， 视觉上会很好的拉伸腿的比例。 随便搭什么上衣都好搭的，下身配双小白鞋就ok了。 这次盈盈还特地找了一款真皮皮带来搭配，仔裤搭个皮带更好看。</p>
+                <div class="money">
+                    <span class="fl sp1">价格</span><span class="fl sp2">￥174.9</span>
+                    <div class="fr"><span class="sp3 ">5 <br />累计评论</span> <span class="sp4">6<br />交易成功</span></div>
+                    <p>
+                        <span class="sp5 fl">淘宝价</span>
+                        <span class="sp6 fl">￥139.90</span>
+                        <span class="sp7 fl">限时抢购</span>
+                    </p>
+                </div>
+                <p class="adress">
+                    配送 &nbsp &nbsp &nbsp浙江温州 至 河南郑州 快递 ¥9.00 卖家承诺7天内发货
+                </p>
+                <p class="chima">...............................................................................................................................................尺码助手</p>
+                <p class="sml"><span>尺寸</span>
+                    <button>S
+                        <div><img src="img/chima.png" alt="" />该码为中国码</div>
+                    </button>
+                    <button>M
+                        <div><img src="img/chima.png" alt="" />该码为中国码</div>
+                    </button>
+                    <button>L
+                        <div><img src="img/chima.png" alt="" />该码为中国码</div>
+                    </button></p>
+                <p class="color"><span>颜色分类</span><span class="btn">预定</span></p>
+                <p class="shu"><span>数量</span> <button id="min" class="jian">-</button> <input class="in" id="in" type="text" value="1" /> <button id="add" class="add">+</button><span>件（库存16件）</span></p>
+                <p class="by"><button>立即购买</button><button id="shopcar"><img src="img/gou0.png" alt="" />加入购物车</button></p>
+                <p class="ad">
+                    <span>承诺</span>
+                    <span><img src="img/1.jpg" alt="" />7天无理由</span>
+                    <span><img src="img/2.png" alt="" />新品</span>
+                </p>
+                <p  class="zhifu"><span>支付</span>
+                    <span class="s1"><img src="img/3.png" alt="" />快捷支付</span>
+                    <span class="s1"><img src="img/4.png" alt="" />信用卡支付</span>
+                    <span class="s1"><img src="img/5.png" alt="" />余额宝支付</span>
+                    <span class="s1"><img src="img/6.png" alt="" />蚂蚁支付</span>
+                </p>
+            </div>
+            <div class="shop-serve fl">
+                <div class="serve-box">
+                    <img src="img/jin.png" alt="" />
+                    <div class="xinyu">
+                        <p>MISSYING定制</p>
+                        <p>信誉：</p>
+                        <p>掌柜：hyywzxsz</p>
+                        <p>联系：</p>
+                        <p>资质：</p>
+                    </div>
+                    <img style="margin-left:20px" src="img/miao.png" alt="" />
+                    <button style="margin-left:20px">进入店铺</button> <button>收藏店铺</button>
+                </div>
+                <div s class="serve-box2">
+                    <p>看了又看<img class="fr" src="img/circle.png" alt="" /></p>
+                    <dl>
+                        <dt><img src="img/img.jpg" alt="" /></dt>
+                        <dd>$388.70</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="img/img1.jpg" alt="" /></dt>
+                        <dd>$388.70</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="img/img2.jpg" alt="" /></dt>
+                        <dd>$388.70</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="img/img3.jpg" alt="" /></dt>
+                        <dd>$388.70</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!--------------------contain---------------->
+<div class="contain">
+    <div class="wrap">
+        <div class="contain-left fl">
+            <div class="le-search">
+                <div><input type="text" placeholder="搜本店" /><div class="button"><img src="img/search.png" alt="" /></div></div>
+            </div>
+            <div class="le-2">
+                <p class="lian">联系卖家：</p>
+                <div class="ll">
+                    <div class="le-l">
+                        <p>店铺动态评分 </p>
+                        <p>描述相符：4.95</p>
+                        <p>服务态度：4.95</p>
+                        <p>发货速度：4.95</p>
+                        <a href="###">收藏店铺</a>
+                    </div>
+                    <div class="le-r">
+                        <p>同行业相比 </p>
+                        <p>71.39%</p>
+                        <p>70.99%</p>
+                        <p>58.61%</p>
+                        <a href="###">进入店铺</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="contain-right fl">
+            <p class="right-1" id="right">
+                <span class="r1 fl">宝贝详情</span>
+                <span class="r2 fl">累计评论5</span>
+                <span class="r3 fl">专享服务</span>
+                <span class="r4 fl">手机购买<img src="img/erweima.png" alt="" /><img src="img/bosan.png" alt="" /></span>
+            </p>
+            <ul class="right-2" id="rgt2">
+                <li class="rimg"><img  src="img/img1`.png" alt="" /></li>
+                <li><img src="img/img2.png" alt="" /></li>
+                <li><img src="img/img3.png" alt="" /></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="se">
+
+</div>
+<!------------------------script--------------------->
+
+<script src="js/new_file.js"></script>
+<script src="js/new_file1.js"></script>
+<script type="text/javascript">
+    var oRgt2=document.getElementById("rgt2");
+    var oLi=oRgt2.getElementsByTagName("li");
+    var oRight=document.getElementById("right");
+    var ospan =oRight.getElementsByTagName("span");
+
+    for(var i=0;i<oLi.length;i++){
+        ospan[i].index=i;
+        ospan[i].onclick=function(){
+            for(var j=0;j<oLi.length;j++){
+                ospan[j].style.background="#f6f6f6";
+                ospan[j].style.borderTopColor="#e5e5e5";
+                ospan[j].style.color="black";
+                oLi[j].style.display="none";
+
+            }
+            this.style.color="#ff4400";
+            this.style.background="white";
+            this.style.borderTopColor="#ff4400";
+            oLi[this.index].style.display="block";
+        }
+    }
+
+</script>
+</body>
+</html>

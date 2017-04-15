@@ -1,0 +1,26 @@
+{
+  "0":{
+  "name":"女生旗舰店",
+  "price":"200.00",
+  "photo":"img/img1.jpg",
+  "group":["groupUrl"],
+  "detail":"0.400",
+  "introduction":"女先生Mr female 2017春季新款女式显瘦修身牛仔裤百搭潮流韩版小脚裤铅笔裤WM170..."
+},
+  "1":{
+    "name":"坏女生旗舰店",
+    "price":"300.00",
+    "photo":"img/img2.jpg",
+    "group":["groupUrl"],
+    "detail":"0.500",
+    "introduction":"好女先生Mr female 2017春季新款女式显瘦修身牛仔裤百搭潮流韩版小脚裤铅笔裤WM170..."
+  },
+  "3":{
+    "name":"好女生旗舰店",
+    "price":"100.00",
+    "photo":"img/img3.jpg",
+    "group":["groupUrl"],
+    "detail":"0.300",
+    "introduction":"坏女先生Mr female 2017春季新款女式显瘦修身牛仔裤百搭潮流韩版小脚裤铅笔裤WM170..."
+  }
+}

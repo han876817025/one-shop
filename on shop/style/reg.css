@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+.warp {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    min-width: 1200px;
+    height: 63px;
+    box-shadow: 0 2px 6px #d6d5d5;
+    border-bottom: solid 1px #969896;
+    padding-top: 18px;
+}
+
+header div {
+    font-size: 12px;
+    color: #969896;
+}
+
+header div > p {
+    margin-right: 13px;
+    margin-top:3px;
+}
+
+header div > .login {
+    color: #145885;
+    font-weight: bold;
+    margin-right: 25px;
+    margin-top:3px;   
+}
+
+header div > .problem {
+    cursor: pointer;
+    width: 99px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+    border: solid 1px #fcfcfc;
+    border-bottom: none;
+}
+
+header div > .problem > .list {
+    background: #FFFFFF;
+    position: absolute;
+    left: -1px;
+    width: 99px;
+    height: auto;
+    border: solid 1px #dedede;
+    border-top: none; display: none;
+    z-index: 9000;
+}
+
+header div > .problem > .list > span {
+    display: block;
+    width: 99px;
+    height: 25px;
+    line-height: 25px;
+    text-align: left;
+    text-indent:15px;
+    border-top: dashed 1px #969896;
+}
+ header div > .problem > .list > span:hover{
+     color: #fe3c3c;  cursor: pointer;
+ } 
+header div > .problem>.bz{
+    width: 12px;
+    height: 11px;
+    background: url(../images/head.png) no-repeat -191px 0;
+    display: inline-block;
+    margin-left: 5px;
+}
+header div > .problem:hover .bz{
+background: url(../images/head.png) no-repeat -210px 0;
+}
+header div > .problem:hover .list{display: block}
+header div > .problem:hover{
+    background: #FFFFFF;
+     border: solid 1px #dedede;
+   border-bottom: none; }
+/*-----------------------------------------------------bod——————————————————————*/
+.bod{    position: relative;
+    width:100%;  min-width: 1200px;
+    padding-top:44px;
+    height:535px;
+    display: flex;justify-items: center;
+    align-items: center;flex-direction: column;
+}
+.bod>.bg{
+    position: absolute;
+    width:100%;
+    height:617px;
+    }
+.bod>.bg>img{position: absolute;opacity: 0;}
+.bod .reg{ position: relative;z-index: 100;
+    width:332px;display: flex;justify-items: center;
+    align-items: center;flex-direction: column;
+}
+.bod .reg>h1{
+    margin-bottom: 12px;}
+.bod .reg>.r-1{
+    margin-top:10px;
+    width:327px;
+    height:50px;
+    border-radius: 4px;
+    border: solid 1px #969896;
+    display: flex;justify-center: center;
+    align-items: center;flex-direction: row;
+}
+.bod .reg>.r-1>input{
+    position: absolute;
+    z-index: 10;
+    height:25px;
+    width:300px;
+    margin-left: 21px;
+    border:none;background: none;outline: none;
+
+}
+.bod .reg>.r-1>.s-1{
+    position: absolute;
+    margin-left:21px;
+    font-size: 15px;
+}
+.bod .reg>.r-1>.title{
+    padding-top:15px;
+    position: absolute;
+    width:181px;
+    left:347px;font-size: 12px;
+    height:45px;background: #e4e4e4;
+   text-align: center;line-height: 20px;
+    transform: scale(0);
+    transform-origin: left bottom;
+
+}
+.bod .reg>.r-1:nth-child(4){
+    width: 192px;
+    margin-left:-130px;
+}
+.bod .reg>.r-1:nth-child(4)>input{
+    width: 192px;
+}
+.bod .reg>.r-1:nth-child(4)>.number{
+    display: block;
+    position: absolute;
+    left:203px;
+    width:126px;
+    height:50px;
+    text-align: center;line-height: 50px;
+    color: #FFFFFF;
+    border-radius: 4px;background: #585560;
+    border: solid 1px #969896;
+}
+.bod .reg>.r-1>.other{
+    display: none;
+    margin-top: -10px;
+   text-align: center;
+    width:100px;
+    padding:14px 10px;line-height: 20px;
+    position: absolute;background: #fff4d8;
+    margin-left:347px;font-size: 12px;
+}
+.bod .reg>.r-1>.true{
+    display: none;
+    margin-top: 5px;
+    text-align: center;
+    width:24px;
+    height:24px;
+    background: url("../images1/regist_new.png") no-repeat -50px 0px ;
+    position: absolute;
+    margin-left:347px;
+}
+.bod .reg>.r-1:nth-child(7){
+    border:none;text-align: left;font-size: 15px;
+}
+.bod .reg>.r-1:nth-child(8){
+    border-color: #ff3c3c;text-align: center;flex-direction: inherit;line-height: 50px;
+    margin-top:0;color:#FFFFFF;background: #ff3c3c;
+    cursor: pointer;
+}
+.bod .reg>.r-1:nth-child(8)>a{
+    color: #FFFFFF;
+}
+/*-------------------------------------------------bottom-------------------------*/
+.bottom{
+    padding-top:10px;
+    border-top:solid 1px #969896;
+    width:100%;  min-width: 1200px;
+    height:117px;background: #FFFFFF;
+    display: flex;justify-items: center;
+    align-items: center;flex-direction: column;
+}
+.bottom p{
+  line-height: 25px;font-size: 15px;
+    color: #333333;
+}

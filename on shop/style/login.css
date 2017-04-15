@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+body {
+    background: #fcfcfc;
+}
+
+.warp {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    min-width: 1200px;
+    height: 63px;
+    box-shadow: 0 2px 6px #d6d5d5;
+    border-bottom: solid 1px #969896;
+    padding-top: 18px;
+}
+
+header div {
+    font-size: 12px;
+    color: #969896;
+}
+
+header div > p {
+    margin-right: 13px;
+    margin-top:3px;
+}
+
+header div > .login {
+    color: #145885;
+    font-weight: bold;
+    margin-right: 25px;
+    margin-top:3px;
+}
+
+header div > .problem {
+    cursor: pointer;
+    width: 99px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+    border: solid 1px #fcfcfc;
+    border-bottom: none;
+}
+
+header div > .problem > .list {
+    background: #FFFFFF;
+    position: absolute;
+    left: -1px;
+    width: 99px;
+    height: auto;
+    border: solid 1px #dedede;
+    border-top: none; display: none;
+    z-index: 9000;
+}
+
+header div > .problem > .list > span {
+    display: block;
+    width: 99px;
+    height: 25px;
+    line-height: 25px;
+    text-align: left;
+    text-indent:15px;
+    border-top: dashed 1px #969896;
+}
+header div > .problem > .list > span:hover{
+    color: #fe3c3c;  cursor: pointer;
+}
+header div > .problem>.bz{
+    width: 12px;
+    height: 11px;
+    background: url(../images/head.png) no-repeat -191px 0;
+    display: inline-block;
+    margin-left: 5px;
+}
+header div > .problem:hover .bz{
+    background: url(../images/head.png) no-repeat -210px 0;
+}
+header div > .problem:hover .list{display: block}
+header div > .problem:hover{
+    background: #FFFFFF;
+    border: solid 1px #dedede;
+    border-bottom: none; }
+/*--------------------------------------bod--------------------*/
+.bod{
+    background: #fcfcfc;
+    width:100%;  min-width: 1200px;
+    padding-top:44px;
+    height:400px;
+    display: flex;justify-items: center;
+    align-items: center;flex-direction: row;
+}
+.bod>.special{
+    margin-left:239px;
+}
+
+.bod>.login{
+    font-size: 12px;
+    padding:53px 33px 0 33px;
+    width:336px;
+    height:354px;
+    background: #FFFFFF;
+}
+.bod>.login>.hd{
+    margin-bottom: 20px;
+}
+.bod>.login>.hd>a{
+    color: #0066cc;
+}
+.bod>.login>.l-1{
+    margin-top: 9px;
+    width:328px;
+    height:52px;
+    border:1px solid #dedede;
+    display: flex;justify-items: center;
+    align-items: center;flex-direction: row;
+}
+.bod>.login>.l-1>em{
+    margin-left:19px;
+    margin-right: 31px;
+    width:18px;
+    height:18px;background: url("../images1/login_popup.png") no-repeat -50px 0px;
+}
+.bod>.login>.l-1 .e2{
+    background: url("../images1/login_popup.png") no-repeat -150px 0px;
+}
+.bod>.login>.l-1>input{
+    width:262px;
+    height:17px;border: none;background: none;outline: none;
+}
+.bod>.login>.l-3{
+    position: relative;
+    border:none;
+    height:30px;margin:0;
+}
+.bod>.login>.l-3 .check{
+    font-size: 13px;
+    margin-top:16px;
+    color: #999999;line-height: 35px;
+    cursor: pointer;
+}
+.bod>.login>.l-3 .check>span{
+    margin-right: 6px;
+    display: inline-block;
+    width:13px;
+    height:13px;
+    background: url("../images1/login.png") no-repeat -347px -270px;
+}
+.bod>.login>.l-3>.title{margin-top: 8px;color: #999999;
+    position: absolute;
+    left:260px;}
+.bod>.login>.l-3>.s-ti{margin-left:10px;margin-top: 15px;
+    color: #eb8b65;display: none;}
+.bod>.login>.l-4{line-height: 52px;
+    text-align: center;flex-direction: column;
+    font-size: 15px;
+    border:none;background: #ff3c3c;
+    border-radius: 4px;cursor: pointer;
+}
+.bod>.login>.l-4 a{
+    color: #FFFFFF;
+}
+.bod>.login>.l-3 .check:hover span{
+    background: url("../images1/login.png") no-repeat -347px -300px;
+}
+.bod>.login>.company{
+    margin-top: 9px;color: #999999;
+}
+.bod>.login>.acount-list{
+    margin-top:18px;
+    height:34px;
+    width:100%;
+    display: flex;justify-content:flex-start;
+    align-items: center;flex-direction: row;
+}
+.bod>.login>.acount-list>em{
+    margin-right:17px;
+    display: inline-block;
+    width:35px;
+    height:34px;
+    background: url("../images1/login_popup.png") no-repeat 0px -250px;
+}
+.bod>.login>.acount-list>em:nth-child(2){
+    background-position-x: -49px;
+}
+.bod>.login>.acount-list>em:nth-child(3){
+    background-position-x: -100px;
+}
+.bod>.login>.acount-list>em:nth-child(4){
+    background-position-x: -250px;
+}
+.bod>.login>.acount-list>.web{
+
+}
+.bod>.login>.acount-list>.web>i{
+    display: inline-block;
+    width:14px;
+    height:14px;
+    background: url("../images1/login.png") no-repeat -201px 1px;
+}
+.bod>.login>.acount-list>.web>i:active{
+    background: url("../images1/login.png") no-repeat 0px 1px;
+}
+.bod>.login>.weima{
+    cursor: pointer;
+    margin-top: -10px;
+    margin-left:303px;
+    width:67px;
+    height:65px;background: url("../images1/codeSwich.png") no-repeat -88px 0px;
+}
+.bod>.login>.weima:hover{
+    background: url("../images1/codeSwich.png") no-repeat -88px -88px;
+}
+/*----------------------------------------bottom-----------------*/
+.bottom{
+    margin-top: 50px;
+    padding-top:10px;
+    width:100%;  min-width: 1200px;
+    height:117px; background: #fcfcfc;
+    display: flex;justify-items: center;
+    align-items: center;flex-direction: column;
+}
+.bottom p{
+    line-height: 25px;font-size: 15px;
+    color: #333333;
+}

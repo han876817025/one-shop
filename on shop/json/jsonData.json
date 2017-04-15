@@ -1,0 +1,54 @@
+{
+    "1":{
+        "p_name":"产品1",
+        "p_price":100,
+        "p_discount":0.9,
+        "p_detail":[1,2,3,4,6....],
+        "p_main":"main.jpg",
+        "p_group":[1,2,3,4,5,6,7],
+        "p_category":"101101",
+        "p_brand":1,
+        "p_config":"这里是产品的配置内容......"
+	},
+	"2":{
+        "p_name":"产品1",
+        "p_price":100,
+        "p_discount":0.9,
+        "p_detail":[1,2,3,4,6....],
+        "p_main":"main.jpg",
+        "p_group":[1,2,3,4,5,6,7],
+        "p_category":"102101",
+        "p_brand":1,
+        "p_config":"这里是产品的配置内容......"
+    }
+}
+
+
+{
+    "101":{
+        "c_name":"传统类商品",
+        "children":{
+            101101:{
+                "name":"农产品",
+                "children":{}
+            },
+            "101102":{
+                "name":"纺织类",
+                "children":{}
+            }
+        }
+    },
+    "102":{
+        "c_name":"科技类商品",
+        "children":{
+            102101:{
+                "name":"电子产品",
+                "children":{}
+            },
+            "102102":{
+                "name":"航空工业",
+                "children":{}
+            }
+        }
+    }
+}

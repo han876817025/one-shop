@@ -1,0 +1,200 @@
+body{
+    background: #FFFFFF;
+}
+.container .hd{
+    min-width: 1200px;
+    width:1200px;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 9px;
+    /*display: flex;flex-direction:row;justify-content: center;align-items: center;*/
+   font-size: 12px;
+    background: #FFFFFF;
+}
+.container .hd a{
+    font-size: 12px;
+    color: #333333;
+    margib-right:16px;
+}
+.container .hd>i{
+    margin-left:25px;
+    margin-right:13px;
+    color: #e60012;
+}
+.container .hd a:hover{
+    color: #e60012;
+}
+.container .hd>.h-search{
+    display: inline-block;
+    width:163px;height: 20px;
+    border:solid 1px #d4d4d4;
+}
+.container .hd>.h-search>input{
+    width:132px;height: 20px;display: inline-block;border: none;background: none;margin-left:6px;
+    outline: none;
+}
+.container .hd>.h-search>span{
+    width:25px;
+    height:20px;
+    background: url("../img-list/indexhead_sprite.png") no-repeat -284px -25px;cursor: pointer;
+}
+.container .hd>.h-search>span:hover{
+    background: url("../img-list/indexhead_sprite.png") no-repeat -261px -25px;cursor: pointer;
+}
+/*------*/
+.container .select{
+    height:121px;
+    border:solid 1px #6c6c6c;background:#FFFFFF;
+
+}
+.container .select>.s-h{
+    font-size: 12px;
+    width:128px;
+    height:121px;
+    background: #f8f8f8;
+}
+.container .select>.s-h>span{
+    margin-top:7px;
+    margin-right:17px;
+}
+.container .select>ul{
+    border-top:#e5e5e5 1px solid;
+    border-left:#e5e5e5 1px solid;
+    margin-left:13px;
+    margin-top: 6px;
+    width:945px;
+    height:105px;
+}
+.container .select>ul>li{
+
+    float: left;
+    border-bottom:#e5e5e5 1px solid;
+    border-right:#e5e5e5 1px solid ;
+    width:104px;
+    height:52px;line-height: 52px;text-align: center;
+}
+.container .select>ul>li>a{
+    display: inline-block;
+    width:104px;
+    height:52px;line-height: 52px;text-align: center;
+}
+.container .select>ul>li>a>img{
+    margin-top:10px;
+}
+.container .select>ul>li>a>div{
+    display: none;
+    width: 101px;font-size: 12px;
+    color: #ff875a;
+    height:51px;text-align: center;line-height: 51px;
+    border:solid 2px #ff875a;
+}
+.container .xuan{
+    background: #FFFFFF;
+    width:100%;
+    height:32px;
+    border:solid #e5e5e5 1px;
+}
+.container .xuan p{
+    font-size: 12px;
+    padding-right:17px;
+    width:112px;line-height: 32px;text-align: right;
+    height:32px;background: #f8f8f8;
+}
+.container .xuan span{
+    font-size: 12px;
+    color: #333333;
+    margin-right:35px;
+}
+.container .xuan span:nth-child(2){
+    margin-left:16px;
+}
+.container .syn{
+    margin:11px auto;
+    height:40px;
+    width: 1200px;background: #f8f8f8;
+    border:solid #e5e5e5 1px;
+}
+.container .syn span{
+    float: left;cursor: pointer;
+    width:49px;
+    height:40px;
+    border-right:solid #e5e5e5 1px;
+    line-height:40px;text-align: center;font-size: 12px;
+}
+.container .syn>span:hover{
+
+    background: #f27e56;
+    color: #FFFFFF;
+}
+.container .syn>div{
+    padding-top: 3px;
+    display: inline-block;
+    width: 117px;
+    height:37px;text-align: center;
+    border-right:solid #e5e5e5 1px;
+}
+.container .syn>div>i{
+    line-height: 17px;
+    display: inline-block;
+    font-size: 12px;
+    width:39px;
+    height:17px;
+    border:solid #e5e5e5 1px;background: #FFFFFF;
+}
+.container .xx{
+    line-height: 41px;
+    font-size: 12px;
+    width:1200px;
+    margin:0 auto;
+    height:41px;background: #FFFFFF;
+    border:solid #e5e5e5 1px;
+}
+.container .xx>span{
+    display: inline-block;
+}
+.container .xx>span>i{
+    margin-left:8px;
+    margin-right:8px;
+    display: inline-block;
+    width: 10px;
+    height:10px; border:solid #e5e5e5 1px;
+}
+/*------------------------------------------------*/
+#container1 {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 3400px;
+}
+
+#container1>div {
+    cursor: pointer;
+    width: 231px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    overflow: hidden;
+    color: #000;
+   margin-right: 25px;
+}
+#container1 .contain:hover{
+    box-shadow:3px  3px 4px #000000;
+    transform: scale(1.01);
+}
+#container1 div img {
+    width: 100%;
+    height: auto;
+    border: none;
+    float: left;
+}
+
+#container1 div div{
+
+    /*margin-top:322px;*/
+    width: 100%;
+    height: auto;
+    color: #555;
+    font-size: 13px;
+    font-family: "Arial";
+    background-color: #f1f1f1;
+}
